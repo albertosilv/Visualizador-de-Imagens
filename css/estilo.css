@@ -1,0 +1,145 @@
+body{
+    background: url(../img/fundo.jpg); 
+    color: #3CB371;
+}
+h1{
+    border-color: #2E8B57;
+    color: #3CB371;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #3CB371, 0 0 70px #3CB371, 0 0 80px 
+    #3CB371, 0 0 100px #3CB371, 0 0 150px #3CB371;
+    font-size:40px;
+
+}
+#imagens{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    top:25%;
+    left:30%;
+    display: inline-block;
+    border:0;
+   
+}
+#botoes{
+    position:absolute;
+    top:50%;
+    left:40%;
+    
+}
+#botao:before {
+	content: '    Adicionar Imagens   ';
+	position: absolute;
+	left: 0; right: 0;
+	text-align: center;
+	
+	cursor: pointer;
+}
+#adicionar {
+    position: relative;
+	height: 30px;
+	width: 150px;
+	cursor: pointer;
+    opacity: 0;
+    content: "Adicionar Imagens";
+  }
+#botao{
+    content: "Adicionar Imagens";
+}
+
+.btn{
+		background: none;
+		border: solid 1px transparent;
+		border-radius: 5px;
+		font-size: 20px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		padding: 6px 12px;
+        text-decoration: none;
+        overflow: hidden;
+	}
+
+.btn i{
+			margin-right: 5px;
+	}
+	
+	/* BTN COLORES */
+.btn-primary{
+		border-color: #2E8B57;
+		color: #3CB371;
+		transition: background 0.3s linear 0s;
+}
+img.imgPeq{
+    top:10%;
+    width:80px;
+    height: 80px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+.btn-primary:hover{
+			background: #2E8B57;
+			border-color: #287A4B;
+			color: #ffffff;
+}
+.modal1 {
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(0,0,0,0.6);
+}
+.modal-box{
+    background: url(../img/transparente.jpeg);
+    width: 80%;
+    height: 500px;
+    left:50%;
+    top:50%;
+    margin-left: -40%;
+    margin-top: -250px;
+    position: absolute;
+
+}
+.modal-box-conteudo2::after {
+    content: "";
+    display: table;
+} 
+.modal-box-conteudo2::after {
+    clear: both;
+}
+.modal-box-conteudo2 {
+     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+     float: right;
+     width: 100%;
+     height: 80%;
+     overflow:auto;
+}
+.fechar{
+    width: 1%;
+    height: 2%;
+    padding: 5px 10px;
+    border:1px solid #CCC;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    color: #ccc;
+    font-size: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.fechar:hover{
+    color:#666;
+    border-color: #666;
+    background: #e61919;
+}
+#but{
+    position: absolute;
+    left:50%;
+    top:80%;
+    font-size:10px;
+}
+#alinhar{
+    position: absolute;
+    float:left;
+}
+  
+  
