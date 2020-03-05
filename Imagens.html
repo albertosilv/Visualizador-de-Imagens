@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>WERPICTURES</title>
+    <meta charset="utf-8" />
+     <link type="text/css" rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/estilo.css" />
+
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/imagens.js"></script>
+
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800'>
+    <link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header">
+        <center>
+            <h1 class=>WERPICTURES</h1>
+        </center>
+    </div>
+    <div id="conteudo">
+        <div id="botoes">
+            <div id="botao" class="btn btn-primary">
+                <input id="adicionar" onchange="carregarImagens()" ; type="file" multiple name="files[]" class="btn btn-primary"
+                    accept=".jpg,.png,jpeg">
+            </div>
+            <br />
+            <div id="botao2">
+                <button id="butvisualizar" class="btn btn-primary" name="visualizar" onclick="visualizar()">Visualizar</button>
+                <button id="butremover" class="btn btn-primary" name="remover" onclick="remover()">Remover Imagens</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    <div id="Modal1" class="modal1" style="display:none">
+            <div class="fechar">
+                    X
+                </div>
+        <div class="modal-box">
+            <div id="modal-box-conteudo" class="modal-box-conteudo2">
+
+            </div>
+        </div>
+    </div>
+    <div id="Modal2" class="modal1" style="display:none">
+        <div class="fechar">
+            X
+        </div>
+        <div class="modal-box">
+
+            <div id="modal-box-conteudo2" class="modal-box-conteudo2">
+
+            </div>
+
+        </div>
+        <div id="but">
+            <button id="todas" class="btn btn-primary" name="todas" onclick="removertudo()">Remover Todas as Imagens</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
